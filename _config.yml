@@ -1,0 +1,50 @@
+# 网站设置
+title: Welcome to My github blog
+description: I'm happy to see you here. This is my personal blog where I share my thoughts and ideas. I hope you enjoy reading them.
+author: Jasper Zhang
+
+# 网址设置
+url: "https://gopractitioner.github.io"
+baseurl: ""
+
+# 主题设置 (如果您使用了一个主题)
+theme: minima
+
+# 分页设置
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+# 日期格式
+date_format: "%Y-%m-%d"
+
+# 社交媒体链接
+twitter_username: your_twitter
+github_username: your_github
+
+# Markdown 渲染引擎设置
+markdown: kramdown
+
+# 插件
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+# 排除的文件/文件夹
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# 默认布局设置
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true
